@@ -296,7 +296,7 @@ function updateProductDetailsInComparator(productId) {
             case 'comparatorRadius':
                 element.innerText = product.radius;
                 break;
-            case 'comparatorAffiliateLink':
+            case 'comparatorDetailsLink':
                 element.href = `/${product.slug}`;
                 break;
         }
