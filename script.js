@@ -266,8 +266,8 @@ function updateProductDetailsInComparator(productId) {
             case 'comparatorImage':
                 element.src = `/images/${product.images[0]}`;
                 break;
-            case 'comparatorPriceAffliateLink':
-                element.href = product.affiliateLink;
+            case 'comparatorAffliateLink':
+                element.href = product.affiliate_link;
                 break;
             case 'comparatorPrice':
                 element.innerText = product.price;
@@ -297,7 +297,7 @@ function updateProductDetailsInComparator(productId) {
                 element.innerText = product.radius;
                 break;
             case 'comparatorAffiliateLink':
-                element.href = product.affiliateLink;
+                element.href = `/${product.slug}`;
                 break;
         }
         element.classList.add('fade-in');
