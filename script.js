@@ -148,7 +148,7 @@ function getSearchBrandListTemplate(productId, imageUrl, title, practice, level)
     return `
         <div class="w-full flex flex-row items-center gap-2 shrink truncate">
             <div class="rounded-full overflow-hidden w-12 h-auto flex items-center shrink-0">
-                <img src="/images/${imageUrl}">
+                <img src="/images/${imageUrl}" alt="${title}">
             </div>
             <div class="w-full flex flex-col truncate">
                 <span class="w-full text-lg font-black text-blue-900 uppercase truncate">
@@ -380,7 +380,7 @@ function updateProductListSearchResult(productsToHide) {
 function getNoProductFoundTemplate() {
     return `
         <div class="overflow-hidden rounded-full mx-auto flex justify-center items-center w-52 w-52">
-            <img src="/fail.gif" class="block w-full h-auto">
+            <img src="/fail.gif" class="block w-full h-auto" alt="fail">
         </div>
 
         <h5 class="text-4xl font-black text-center uppercase text-blue-900 my-4">Aucune paire trouvée !</h5>
